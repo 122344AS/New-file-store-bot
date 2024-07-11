@@ -40,7 +40,7 @@ VERIFY = environ.get("VERIFY", "False") # set True Or False and make sure spelli
 # Owner Information
 API_ID = int(environ.get("API_ID", "26513278"))
 API_HASH = environ.get("API_HASH", "7a3df75c8ed3520737e343e9f049166b")
-ADMINS = int(environ.get("ADMINS", "5249356814 5826767568"))
+ADMINS = int(environ.get("ADMINS", "5249356814"))
 
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://mojahidalam8092:qgFjLeza2Ml3XU67@cluster0.1swqoxd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
