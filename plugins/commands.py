@@ -34,7 +34,6 @@ async def is_subscribed(bot, query, channel):
         except ChatAdminRequired:
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
-         try:
             await bot.get_chat_member(id, query.from_user.id)
         except UserNotParticipant:
             btn.append([InlineKeyboardButton(f'Join {• Join •}', url=invite_link.invite_link)])
