@@ -2,7 +2,9 @@ import pytz, random, string
 from datetime import date 
 from config import API, URL
 from shortzy import Shortzy
-from info import *
+from config import AUTH_CHANNEL
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.errors import *
 
 TOKENS = {}
 VERIFIED = {}
