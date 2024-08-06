@@ -2,9 +2,23 @@ import pytz, random, string
 from datetime import date 
 from config import API, URL
 from shortzy import Shortzy
+from info import *
 
 TOKENS = {}
 VERIFIED = {}
+
+async def is_subscribed(bot, query, channel):
+    btn = []
+    for id in channel:
+        chat = await bot.get_chat(int(id))
+        try:
+            await bot.get_chat_member(id, query.from_user.id)
+        except UserNotParticipant:
+            btn.append([InlineKeyboardButton(⚡ Join ⚡', url=chat.invite_link)])
+        except Exception as e:
+            pass
+    return btn
+    
 
 async def get_verify_shorted_link(link):
     shortzy = Shortzy(api_key=API, base_site=URL)
