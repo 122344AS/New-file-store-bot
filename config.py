@@ -101,9 +101,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "various-hattie-zxnetworks-4e572079.koyeb.app/"
+        URL = "correct-valentia-filestoredeploy-64b38d02.koyeb.app/"
     else:
-        URL = "various-hattie-zxnetworks-4e572079.koyeb.app/"
+        URL = "correct-valentia-filestoredeploy-64b38d02.koyeb.app/"
 
 
 
