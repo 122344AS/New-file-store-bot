@@ -15,6 +15,7 @@ from plugins.database import get_file_details
 from pyrogram.errors import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery, InputMediaPhoto
 from config import AUTH_CHANNEL, Var, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE, ADMINS, VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
+from utility import is_subscribed
 import re
 import json
 import base64
