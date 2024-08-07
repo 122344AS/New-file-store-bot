@@ -15,14 +15,13 @@ from plugins.database import get_file_details
 from pyrogram.errors import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery, InputMediaPhoto
 from config import AUTH_CHANNEL, Var, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE, ADMINS, VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
-from utility import is_subscribed
 import re
 import json
 import base64
 from urllib.parse import quote_plus
 from TechVJ.utils.file_properties import get_name, get_hash, get_media_file_size
 logger = logging.getLogger(__name__)
-from utils import verify_user, check_token, check_verification, get_token
+from utils import verify_user, is_subscribed, check_token, check_verification, get_token
 
 BATCH_FILES = {}
 
